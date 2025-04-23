@@ -1,0 +1,210 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/bg.jpg');
+}
+
+/* -- Internal CSS simulated safely with display property -- */
+.requirement-placeholder {
+    display: block; 
+}
+
+/* -- End of Internal CSS -- */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color:  #C68E17; /* Yellow-brown text */
+}
+
+.logo img {
+    max-height: 80px; /* Ensure the logo is not too large */
+    object-fit: contain;
+}
+
+/* Style for the navigation links */
+.nav-links {
+    display: flex;  /* Align links horizontally */
+    padding: 0; /* No padding around the nav links */
+    list-style: none; /* Remove default list styling */
+}
+
+/* Style for each individual link */
+.nav-links a {
+    margin: 0 10px; /* Space between links */
+    padding: 0 10px; /* Space inside each link */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link text color */
+    font-weight: bold; /* Make text bold */
+    font-size: 1.2rem; /* Set font size */
+    border-left: 1px solid #999; /* Add a divider on the left of each link */
+}
+
+/* Remove the divider from the first link */
+.nav-links a:first-child {
+    border-left: none; /* No left border for the first link */
+}
+
+/* Style for hover effect to make the link color change when hovered */
+.nav-links a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffebcc; /* Light orange background */
+    border: 1px solid #ccc;
+    gap: 20px;
+}
+
+.section > div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.image-container {
+    width: 100%;
+    background-color: #ffebcc; /* Light orange background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Fix for 3-column layout */
+.three-column {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.three-column > .image-container {
+    flex: 1;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.three-column > .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.section.quick-links-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffebcc; /* Light orange background */
+    border: 1px solid #ccc;
+}
+
+.image-container.quick-links-image {
+    flex: 1;
+    max-width: 40%;
+    background-color: #ffebcc; /* Light orange background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container.quick-links-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.quick-links {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.quick-links h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.quick-links ul {
+    padding-left: 20px;
+}
+
+.quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffebcc; /* Light orange background */
+    border-top: 1px solid #ccc;
+}
+
+button {
+    padding: 20px 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.project-title {
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.project-title h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-title p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Classes added to meet requirements */
+.highlight-box {
+    border: 5px solid #ddd;
+    border-color: maroon;
+    background-color: #ffebcc; /* Light orange background */
+}
+
+.info-block {
+    background-color: #ffebcc; /* Light orange background */
+    padding: 40px;
+    border-radius: 8px;
+}
+}
